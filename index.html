@@ -1,81 +1,93 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<link rel="stylesheet" href="assets/css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Open+Sans:300,400" rel="stylesheet">
-	<title>Alyssa Albright</title>
-</head>
-<body>
-	<div class="header_full">
-		<header>
-			<div class="header_name">
-				<div class="header_name_child">Alyssa Albright
-                </div>
-			</div>
+<html lang="en">
 
-			<div class="nav">
-				<div class="nav_child">
-					<ul>
-						<li><a href="index.html" id="nav_section">About</a> | </li>
-						<li><a href="portfolio.html" id="nav_section">Portfolio</a> | </li>
-						<li><a href="contact.html" id="nav_section">Contact</a></li>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+	<header id="masthead">
+		<div id="mastheadContainer" class="container">
+			<nav class="navbar navbar-expand-lg  navbar-light">
+				<a class="navbar-brand" href="index.html" id="logo" style="background-color: #4aaaa5; color: #ffffff">Alyssa Albright</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+					aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse test" id="navbarText">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="portfolio" href="portfolio.html">Portfolio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
 					</ul>
 				</div>
+			</nav>
+		</div>
+	</header>
+	<div class="wrapper">
+		<!-- start new main-container edits/additions -->
+		<div id="main-container" class="container">
+			<section class="main-section">
+				<div class="row">
+					<div id="main-body" class="col-12 col-sm-12 col-md-12 col-lg-9">
+						<div id="title-row" class="row">
+							<div class="col-12 col-sm-12 col-lg-12">
+								<h2 id="contentTitle">About Me</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div id="aboutContent" class="col-12 col-sm-12 col-lg-12 flex-fill">
+								<img src="https://via.placeholder.com/150" class="auth-image img-left" alt="Alyssa">
+								<p class="indexParagraph">
+									<p>My name is Alyssa Albright.  I moved to San Antonio in 2016 when my husband was transferred here for a job.  I am originally from
+										Georgia.  I currently work as a sleep lab director.  I have been a Registered Polysomnographic Technologist for 16 years.
+										<br>
+										I became interested in web development when I heard my husbands co-workers talking about how fun and challenging it is.
+									</p>
+
+								</p>
+							</div>
+						</div>
+					</div>
+					
+
+				</div>
+			</section>
+		</div>
+		<!-- end new main-container edits/additions -->
+
+
+		<footer class="fixed-bottom text-center">
+			<div>
+				Copyright &copy; 2019 Alyssa Albright
 			</div>
-		</header>
-	</div>
+		</footer>
 
-<div class="main_container">
-	<div class="main_spacer">
+		<!-- Javascript for Bootstrap -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"></script>
 
-		<div class="main_content_header">
-			<span>About Me</span>
-		</div>
+</body>
 
-
-		<div class="main_content">
-			<img src="" style="float: left; margin: 4px 10px 0px 0px;">
-				<p>
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro dolore velit, unde eius nemo error beatae quod quas, atque aliquam sint accusamus est rerum cumque qui, ipsa culpa nobis quibusdam.
-				</p>
-
-				<p>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem quo, nostrum itaque dolore, molestiae libero repellat mollitia ducimus ratione dolorem maxime? Vitae eaque laborum placeat dolor fugit, deleniti expedita praesentium?
-				</p>
-
-
-
-		</div>
-
-
-	<div class="sidebar_header">
-		<span>Connect With Me</span>
-
-	</div>
-
-	<div class="sidebar">
-		<center>
-			<br>
-			<br>
-				<a href="about.html" id="nav_section"><img src="assets/images/github.png" width= 48px height=48px></a>
-				<a href="portfolio.html" id="nav_section"><img src="assets/images/stackoverflow.png" width= 48px height=48px></a>
-				<a href="contact.html" id="nav_section"><img src="assets/images/linkedin.png" width= 48px height=48px></a>
-			<br>
-			<br>
-			<br>
-				
-		</center>
-	</div>
-
-
-</div>
-
-	<div class="footer">
-		<center>
-			<h3 class="footer">Copyright © 2019 Alyssa Albright</h3>
-		</center>
-	</div>
-
+</html>
 </body>
 
 </html>

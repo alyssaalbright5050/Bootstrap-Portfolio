@@ -1,56 +1,70 @@
-<!doctype html>
-<html lang="en-us">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Contact</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+	<title>Bootstrap-Portfolio</title>
 </head>
 
 <body>
+	<nav class="navbar navbar-expand-lg  navbar-light">
+		<a class="navbar-brand" href="index.html" id="logo" style="background-color: #4aaaa5; color: #ffffff">Alyssa Albright</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+			aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse test" id="navbarText">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="portfolio" href="portfolio.html">Portfolio</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
 
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Alyssa Albright</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+	<div class="container mt-5 mb-5">
+		<div class="border ml-auto mr-auto" style="background-color: #cccccc">
+			<div class="w-auto p-3" style="background-color: #ffffff;">
+				<h3 class="about-title">Contact</h3>
+				<hr>
+				<form style="color: #777777">
+					<div class="form-group">
+						<label for="exampleInputName">Name</label>
+						<input type="name" class="form-control" id="exampleInputName" placeholder="John Smith">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Email</label>
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+							placeholder="example@email.com">
+						<small id="emailHelp" class="form-text text-muted"></small>
+					</div>
+					<div class="form-group">
+						<label for="exampleFormControlTextarea1">Message</label>
+						<textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+					</div>
+					<button type="submit" class="btn" style="background-color: #4aaaa5; color: #ffffff">Submit</button>
+				</form>
 
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>Contact</h1>
+			</div>
+		</div>
+	</div>
 
-      <form id="contact-form">
-        <ul>
-          <li>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-          </li>
-          <li>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-          </li>
-          <li>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required="required"></textarea>
-          </li>
-        </ul>
-        <input type="submit">
-      </form>
-
- 
-  </div>
-
-  <footer>
-    <div class="container">
-      Copyright &copy; 
-    </div>
-  </footer>
+	<footer class="fixed-bottom text-center">
+		<div>
+			Copyright &copy; 2019 Alyssa Albright
+		</div>
+	</footer>
 </body>
 
 </html>
